@@ -1378,7 +1378,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -21, 45, -5 }
+#define NOZZLE_TO_PROBE_OFFSET { -19, -46, -5 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1578,11 +1578,11 @@
 
 // The size of the printable area
 #define X_BED_SIZE 300
-#define Y_BED_SIZE 300
+#define Y_BED_SIZE 274 //My printer uses bed clips that take up a total of 26mm from the 300mm bed length volume on y-axis. This accounts for them. 
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -23
+#define Y_MIN_POS -22
 #define Z_MIN_POS 0
 #define X_MAX_POS 300
 #define Y_MAX_POS 300
