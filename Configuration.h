@@ -1401,7 +1401,7 @@
 //#define PROBE_ACTIVATION_SWITCH
 #if ENABLED(PROBE_ACTIVATION_SWITCH)
   #define PROBE_ACTIVATION_SWITCH_STATE LOW // State indicating probe is active
-  //#define PROBE_ACTIVATION_SWITCH_PIN PC6 // Override default pin
+  //#define PROBE_ACTIVATION_SWITCH_PIN -1 // Override default pin
 #endif
 
 /**
